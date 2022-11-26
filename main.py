@@ -4,9 +4,6 @@ import argparse
 from dotenv import load_dotenv
 
 
-
-
-
 def short_link (long_link, token):
     url = 'https://api-ssl.bitly.com/v4/bitlinks'
     body = {'long_url': long_link}
@@ -44,7 +41,3 @@ def main():
 if __name__ == '__main__':
     load_dotenv()
     main()
-
-
-
-
